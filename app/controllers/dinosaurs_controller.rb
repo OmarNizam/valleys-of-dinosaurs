@@ -42,12 +42,13 @@ class DinosaursController < ApplicationController
     @dinosaur.destroy
     redirect_to dinosaurs_path
   end
-  
+
   private
 
   def dinosaur_params
     params.require(:dinosaur).permit(:name, :age, :image_url)
   end
 
+  
 
 end
